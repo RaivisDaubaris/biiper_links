@@ -20,5 +20,4 @@ class Link extends Model
 		return $this->hasMany(Visit::class);
 	}
 
-    use HasFactory;
 }

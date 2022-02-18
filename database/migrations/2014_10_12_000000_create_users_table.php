@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->string('password');
             $table->string('background_color')->default('#ffffff');
-            $table->string('text_color')->('#333333');
+            $table->string('text_color')->default('#333333');
             $table->rememberToken();
             $table->timestamps();
         });
