@@ -39,4 +39,14 @@ class User extends Authenticatable
     {
         return $this->hasMany(Links::class);
     }
+
+    public function visits()
+    {
+        return $this->hasManyThrough(Visit::class, Links::class);
+    }
+
+    public function getRoutKeyName()
+    {
+        return 'username';
+    }
 }

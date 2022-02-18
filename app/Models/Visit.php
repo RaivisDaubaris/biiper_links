@@ -20,6 +20,4 @@ class Visit extends Model
 		return $this->hasManyThrough(Visit::class, Link::class);
 	}
 
-
-    use HasFactory;
 }
